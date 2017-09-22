@@ -9,10 +9,10 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-# Declare a 2D matrix of an arbitrary size, say 10 x 10
+# [C] Declare a 2D matrix of an arbitrary size, say 10 x 10
 l = np.zeros(shape = (50,50), dtype = np.int)
 
-# Initialize the 2D matrix with an initial condition
+# [C] Initialize the 2D matrix with an initial condition
 # ----- The following is the initial condition for a Glider -----
 l[4,4] = 1
 l[5,5] = 1
@@ -20,21 +20,23 @@ l[6,3] = 1
 l[6,4] = 1
 l[6,5] = 1
 
-# Start the loop: FOR or WHILE: Justify which is better of the two and why?
-for i in range(0,50):
-for j in range(0,50):
+# [NC] Start the loop: FOR or WHILE: Justify which is better of the two and why?
+#for i in range(1,49):
+#for j in range(1,49):
+#if l[i,j] == 
 
-# Update the 2D matrix according to the rules specified by the Game of Life.
+# [NC] Update the 2D matrix according to the rules specified by the Game of Life.
 
-# Plot the current state of the 2D matrix using MATPLOTLIB
+# [C] Plot the current state of the 2D matrix using MATPLOTLIB
 plt.matshow(l)
 #plt.grid()
 plt.show()
-# Press 'key' to continue until FOR or WHILE loop allows
+# [NC] Press 'key' to continue until FOR or WHILE loop allows
 
-# Close All windows
+# [ NC] Close All windows
 
 # Print Game Over!
+print("Game Over!")
 
 
 
